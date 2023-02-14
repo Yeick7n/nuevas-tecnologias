@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <select v-model="mostrar">
+            <option value="1">ninguno</option>
+            <option value="2">imagen 1</option>
+            <option value="3">imagen 2</option>
+        </select>
+<div v-if="mostrar==2"><img src="https://i.ytimg.com/vi/0OeT1P6qkpQ/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgISh_MA8=&rs=AOn4CLCrRj4jTgP8_0tqdiy-vMIQMgMVvA"
+     width="400" height="300"></div>
+<div v-if="mostrar==3"><img src="https://static.displate.com/857x1200/displate/2021-12-29/a2d383debe2cfec048b91d874c2b7bdd_31fe8fc1312bc8a4de1e1d386977adee.jpg"
+     width="400" height="500"></div>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="ejemplo2.js"></script>
+</html>

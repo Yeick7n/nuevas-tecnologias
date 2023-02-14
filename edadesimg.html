@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <label>Digite la edad de la persona </label><input type="number" v-model="edad">
+        <button @click="EdadFoto()">Mostrar Foto</button>
+        <div v-if="foto==1"><img src="https://definicion.de/wp-content/uploads/2009/11/nino-1.jpg" width="400"
+                height="300"></div>
+        <div v-if="foto==2"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYPwCCtne-mx_FlgyMKe2LOs_ZceDCTWEQWEdlCWAGq2WtlcYRNAOwoCDO-LYhUUSt_o4&usqp=CAU"
+                width="400" height="300"></div>
+        <div v-if="foto==3"><img
+                src="https://thumbs.dreamstime.com/b/hombre-adulto-elegante-que-sostiene-una-tarjeta-de-visita-en-blanco-32323890.jpg"
+                width="400" height="300"></div>
+        <div v-if="foto==4"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7lpdOpAcNBmvELC6nuvKXMsQsHqLZvKFL93ECoVCAAigmIW0e0xU1d84XJ5H2Byyo5xM&usqp=CAU"
+                width="400" height="300"></div>
+
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="edadesimg.js"></script>
+
+</html>
