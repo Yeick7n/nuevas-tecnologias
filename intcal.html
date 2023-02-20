@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intcal.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="calculadora">
+    <form action="#" name="calculadora" id="calculadora">
+
+    <main>
+        <label><h2 style="color: skyblue;">CALCULADORA</h2></label><input type="text" v-model="resultado" readonly id="textoPantalla">0 <br>
+        <button @click="unir(7)"> 7 </button><button @click="unir(8)"> 8 </button><button @click="unir(9)"> 9 </button><button> c </button><br>
+        <button @click="unir(4)"> 4 </button><button @click="unir(5)"> 5 </button><button @click="unir(6)"> 6 </button><button> / </button> <br>
+        <button @click="unir(1)"> 1 </button><button @click="unir(2)"> 2 </button><button @click="unir(3)"> 3 </button><button> - </button><br>
+        <button > + </button><button @click="unir(0)"> 0 </button><button> x </button><button> = </button><br> 
+    </main>
+    
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="calculadora.js"></script>
+</html>
