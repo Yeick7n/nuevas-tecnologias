@@ -2,8 +2,10 @@ new Vue({
     el:"main",
 
     data:{
-        contador:0,
-        articulos:[]
+        compras:0,
+        articulos:[],
+        respuesta:0
+        
     },
 
     methods: {
@@ -12,7 +14,13 @@ new Vue({
             var articulo = new Object();
             articulo.nombre = n
             articulo.valor = v 
+            this.articulos.push(articulo)
             console.log(articulo)
+        },
+
+        total(){
+            this.respuesta=this.valor+this.valor
+            
         }
     },
 })

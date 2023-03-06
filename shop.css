@@ -1,1 +1,7 @@
 #textoPantalla{font-family: "Algerian";text-align: right; font-size: 150%; color: white;}
+
+.fondo{
+    background-image: url('https://thumbs.dreamstime.com/b/libreta-en-el-fondo-blanco-jpg-68575930.jpg');
+     background-repeat: no-repeat;
+     background-size: 110% 100%;
+}
